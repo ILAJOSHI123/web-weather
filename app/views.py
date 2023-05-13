@@ -3,11 +3,7 @@ import requests
 
 
 # Create your views here.
-<<<<<<< HEAD
-def Index(request):
-=======
-def index(request):
->>>>>>> a312abb7bf23b0b2f2fa3680d530ac5248d3b172
+def home(request):
 
 
     city =  request.GET.get('city',"Dehradun")
@@ -28,5 +24,5 @@ def index(request):
 
     context = {'data': payload }
     print(context)
-    return render(request, "app/index.html" , context)
+    return render(request, "app/home.html" , context)
 
